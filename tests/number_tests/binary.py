@@ -6,15 +6,17 @@ def evaluate(expr):
     print("Oops! Incorrect Answer!")
     return 0
 
-def testPrecedence():
+def testBinary():
     score=0
     print("Enter the expected values of these expressions")
     expressions = [
-        "100-3*2**2+1",
-        "100-(3*2)**2+1",
-        "100-3*2**(2+1)",
-        "100-(3*2)**(2+1)",
-        "100-16//3**2",
+        "7<<2",
+        "7>>2",
+        "5&3",
+        "5|3",
+        "8*~8",
+        "8*-~8",
+        "8*~-8",
     ]
     score=0
     for e in expressions:

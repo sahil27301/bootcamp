@@ -1,15 +1,17 @@
 import sys
 from tests.number_tests import precedence
+from tests.number_tests import binary
 
 # Dictionary of all the functions
 functions_to_test = {
     "precedence":precedence.testPrecedence,
+    "binary":binary.testBinary,
 }
 
 def displayOptions():
     print('*'*100)
     print("You can test the functions by running:")
-    print("py[/python3/python] test.py function_name")
+    print("py[/python/pythonr] test.py function_name")
     print("If you want to test more than one function at a time, enter the function names space-separated.")
     print('*'*100)
     print("The functions available for testing are: ")
