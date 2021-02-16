@@ -2,8 +2,10 @@ def evaluate(expr):
     ans=input(f"{expr} = ")
     if ans==str(eval(expr)):
         print("Good job! Correct Answer!")
+        print("*"*50)
         return 1
     print("Oops! Incorrect Answer!")
+    print("*"*50)
     return 0
 
 def testPrecedence():
@@ -15,6 +17,7 @@ def testPrecedence():
         "100-3*2**(2+1)",
         "100-(3*2)**(2+1)",
         "100-16//3**2",
+        "5*5/5*5",
     ]
     score=0
     for e in expressions:

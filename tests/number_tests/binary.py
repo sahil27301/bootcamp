@@ -2,8 +2,10 @@ def evaluate(expr):
     ans=input(f"{expr} = ")
     if ans==str(eval(expr)):
         print("Good job! Correct Answer!")
+        print("*"*50)
         return 1
     print("Oops! Incorrect Answer!")
+    print("*"*50)
     return 0
 
 def testBinary():

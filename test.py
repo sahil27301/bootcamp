@@ -1,11 +1,12 @@
 import sys
-from tests.number_tests import precedence
-from tests.number_tests import binary
+from tests.number_tests import precedence, binary
+from tests.variable_tests import variables
 
 # Dictionary of all the functions
 functions_to_test = {
     "precedence":precedence.testPrecedence,
     "binary":binary.testBinary,
+    "variable":variables.testVariables,
 }
 
 def displayOptions():
