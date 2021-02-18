@@ -1,12 +1,15 @@
 import sys
 from tests.number_tests import precedence, binary
 from tests.variable_tests import variables
+from tests.string_tests import indexing, slicing
 
 # Dictionary of all the functions
 functions_to_test = {
     "precedence":precedence.testPrecedence,
     "binary":binary.testBinary,
     "variable":variables.testVariables,
+    "indexing":indexing.testIndices,
+    "slicing":slicing.testSlices,
 }
 
 def displayOptions():
@@ -26,6 +29,8 @@ def valid(function):
     return function in functions_to_test
 
 def main(functions):
+    if "all" in functions:
+        functions=[i for i in functions_to_test]
     if not functions:
         displayOptions()
         return
