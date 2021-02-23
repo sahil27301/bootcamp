@@ -15,12 +15,14 @@ functions_to_test = {
 def displayOptions():
     print('*'*100)
     print("You can test the functions by running:")
-    print("py[/python/pythonr] test.py function_name")
+    print("py[/python/python3 test.py function_name")
     print("If you want to test more than one function at a time, enter the function names space-separated.")
     print('*'*100)
     print("The functions available for testing are: ")
     for index, function in enumerate(functions_to_test):
         print(f"{index+1:02d}. {function}")
+    print("To test all functions, enter:")
+    print("py[/python/python3 test.py all")
 
 def testFunction(function):
     return functions_to_test[function]

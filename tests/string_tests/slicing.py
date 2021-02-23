@@ -1,5 +1,5 @@
 def evaluate(expr, answer):
-    ans=input(expr)
+    ans=input(expr).strip()
     if ans==answer:
         print("Good job! Correct Answer!")
         print("*"*50)
@@ -10,7 +10,7 @@ def evaluate(expr, answer):
 
 def evaluateSlice(e, a):
     s='abcde'
-    ans=input(e)
+    ans=input(e).strip()
     try:
         if 's' in ans and eval(ans)==a:
             print("Good job! Correct Answer!")

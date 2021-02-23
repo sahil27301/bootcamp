@@ -1,5 +1,5 @@
 def evaluate(expr, answer):
-    ans=input(expr)
+    ans=input(expr).strip()
     if ans==answer:
         print("Good job! Correct Answer!")
         print("*"*50)
