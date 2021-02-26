@@ -1,7 +1,7 @@
 import sys
 from tests.number_tests import precedence, binary
 from tests.variable_tests import variables
-from tests.string_tests import indexing, slicing
+from tests.string_tests import indexing, slicing, string_methods,string_formatting
 
 # Dictionary of all the functions
 functions_to_test = {
@@ -10,6 +10,8 @@ functions_to_test = {
     "variable":variables.testVariables,
     "indexing":indexing.testIndices,
     "slicing":slicing.testSlices,
+    "string_methods":string_methods.testMethods,
+    "formatting":string_formatting.testFormatting,
 }
 
 def displayOptions():

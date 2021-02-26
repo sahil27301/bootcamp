@@ -2,10 +2,10 @@ def evaluate(expr, answer):
     ans=input(expr).strip()
     if ans==answer:
         print("Good job! Correct Answer!")
-        print("*"*50)
+        print("*"*100)
         return 1
     print("Oops! Incorrect Answer!")
-    print("*"*50)
+    print("*"*100)
     return 0
 
 def evaluateSlice(e, a):
@@ -14,15 +14,15 @@ def evaluateSlice(e, a):
     try:
         if 's' in ans and eval(ans)==a:
             print("Good job! Correct Answer!")
-            print("*"*50)
+            print("*"*100)
             return 1
         else:
             print("Oops! Incorrect Answer!")
-            print("*"*50)
+            print("*"*100)
             return 0
     except:
         print("Oops! Incorrect Answer!")
-        print("*"*50)
+        print("*"*100)
         return 0
 
 
