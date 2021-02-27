@@ -5,6 +5,7 @@ from tests.string_tests import indexing, slicing, string_methods,string_formatti
 from tests.list_tests import list_methods
 from tests.sets_dicts_test import sets_and_dicts
 from tests.boolean_tests import bools
+from tests.functions_and_control_flow import function_tests
 
 # Dictionary of all the functions
 functions_to_test = {
@@ -17,7 +18,13 @@ functions_to_test = {
     "formatting":string_formatting.testFormatting,
     "lists":list_methods.testLists,
     "dictionaries_sets":sets_and_dicts.testSets,
-    "booleans":bools.testBools
+    "booleans":bools.testBools,
+    "check_odd_even":function_tests.check_odd_even,
+    "check_divisibility":function_tests.check_divisibility,
+    "check_grade":function_tests.check_grade,
+    "check_prime":function_tests.check_prime,
+    "find_primes":function_tests.find_primes,
+    "highest_multiple_of_3":function_tests.highest_multiple_of_3,
 }
 
 def displayOptions():
