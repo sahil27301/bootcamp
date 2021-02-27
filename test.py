@@ -2,6 +2,9 @@ import sys
 from tests.number_tests import precedence, binary
 from tests.variable_tests import variables
 from tests.string_tests import indexing, slicing, string_methods,string_formatting
+from tests.list_tests import list_methods
+from tests.sets_dicts_test import sets_and_dicts
+from tests.boolean_tests import bools
 
 # Dictionary of all the functions
 functions_to_test = {
@@ -12,6 +15,9 @@ functions_to_test = {
     "slicing":slicing.testSlices,
     "string_methods":string_methods.testMethods,
     "formatting":string_formatting.testFormatting,
+    "lists":list_methods.testLists,
+    "dictionaries_sets":sets_and_dicts.testSets,
+    "booleans":bools.testBools
 }
 
 def displayOptions():

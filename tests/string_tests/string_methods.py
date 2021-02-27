@@ -6,14 +6,11 @@ def evaluate(expr, answer):
             print("Good job! Correct Answer!")
             print("*"*100)
             return 1
-        else:
-            print("Oops! Incorrect Answer!")
-            print("*"*100)
-            return 0
     except:
-        print("Oops! Incorrect Answer!")
-        print("*"*100)
-        return 0
+        pass
+    print("Oops! Incorrect Answer!")
+    print("*"*100)
+    return 0
 
 def testMethods():
     score=0
@@ -22,17 +19,23 @@ def testMethods():
 Write an expression to create a string which has the same letters as s but in upper-case.
 """,
 """A string is stored in the variable s
-Write an expression to create a string which has the same letters as s but in upper-case.
+Write an expression to create a string which has the same letters as s but in lower-case.
 """,
 """A string is stored in the variable s
 The string is in the format dd-mm-yy
 Write an expression to create a list that has the date, month and year part.
 """,
+"""
+s="abcdef"
+i = s.find('c')
+What is the value stored in i?
+"""
     ]
     answers = [
         "s.upper()",
         "s.lower()",
         "s.split('-')",
+        "2"
     ]
     score=0
     for e,a in zip(expressions, answers):

@@ -5,15 +5,12 @@ def evaluate(expr, answer, n):
             print("Good job! Correct Answer!")
             print("*"*100)
             return 1
-        else:
-            print("Oops! Incorrect Answer!")
-            print("*"*100)
-            return 0
     except:
-        print("Except")
-        print("Oops! Incorrect Answer!")
-        print("*"*100)
-        return 0
+        pass
+    print("Except")
+    print("Oops! Incorrect Answer!")
+    print("*"*100)
+    return 0
 
 def testFormatting():
     score=0

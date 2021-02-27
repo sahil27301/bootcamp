@@ -1,5 +1,5 @@
 def evaluate(expr, answer):
-    ans=input(expr).strip(" \"'")
+    ans=input(expr).strip()
     if ans==answer:
         print("Good job! Correct Answer!")
         print("*"*100)
@@ -8,30 +8,31 @@ def evaluate(expr, answer):
     print("*"*100)
     return 0
 
-def testIndices():
+def testBools():
     score=0
-    print("Enter the expected values of these expressions")
+    print("Answer True or False for the following questions.")
     expressions = [
-"""s = 'abcde'
-c=s[1]
+"""
+c = 1>2 or 1<2
 What is the value stored in c after this?
 """,
-"""s='abcde'
-c=s[-1]
+"""c = 1>2 and 1<2
 What is the value stored in c after this?
 """,
-"""s='abcde'
-What is the forward index of 'c' in s?
+"""a = [1, 2, 3]
+c = 2 in a
+What is the value stored in c after this?
 """,
-"""s='abcde'
-What is the reverse index of 'c' in s?
+"""a = [[1, 2, 3]]
+c = 2 in a
+What is the value stored in c after this?
 """,
     ]
     answers = [
-        "b",
-        "e",
-        "2",
-        "-3",
+        "True",
+        "False",
+        "True",
+        "False",
     ]
     score=0
     for e,a in zip(expressions, answers):
